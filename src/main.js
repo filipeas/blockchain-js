@@ -1,9 +1,17 @@
 const { Block } = require("./block");
 const { Blockchain } = require("./blockchain");
+const { Transaction } = require("./transaction");
 
 let FAScoin = new Blockchain();
-console.log("Mining block 1...");
-FAScoin.addBlock(new Block(1, '01/11/2022', { amount: 1 }));
+FAScoin.createTransaction(new Transaction('address1', 'address2', 100));
+FAScoin.createTransaction(new Transaction('address2', 'address1', 50));
 
-console.log("Mining block 2...");
-FAScoin.addBlock(new Block(2, '01/11/2022', { amount: 6 }));
+console.log('\nStarting the miner...');
+FAScoin.minePendingTransactions('filipeas-address');
+
+console.log('\nBalance of filipe is ', FAScoin.getBalanceOfAddress('filipeas-address'));
+
+console.log('\nStarting the miner again...');
+FAScoin.minePendingTransactions('filipeas-address');
+
+console.log('\nBalance of filipe is ', FAScoin.getBalanceOfAddress('filipeas-address'));
