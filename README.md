@@ -8,7 +8,7 @@
 </p>
 
 # Como funciona?
-O projeto foi feito baseado na Blockchain do Bitcoin, logo foi adicionado caracteristicas básicas, como rede P2P, proof of work, apdate de chains para os nós e wallet.
+O projeto foi feito baseado na Blockchain do Bitcoin, logo foi adicionado caracteristicas básicas, como rede P2P, proof of work, update de chains para os nós e wallet.
 
 # Como executar?
 Você pode executar de duas formas. 
