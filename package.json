@@ -1,6 +1,22 @@
 {
+  "name": "Blockchain-js",
+  "version": "0.1.0",
+  "description": "Blockchain Javascript",
+  "repository": "https://github.com/filipeas/blockchain-js",
+  "author": "Filipe A.S <https://github.com/filipeas>",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node ./app",
+    "dev": "node ./app"
+  },
   "dependencies": {
     "crypto-js": "^4.1.1",
-    "elliptic": "^6.5.4"
+    "elliptic": "^6.5.4",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "ws": "^8.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2"
   }
 }
