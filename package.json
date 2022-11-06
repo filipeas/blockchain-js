@@ -4,6 +4,7 @@
   "description": "Blockchain Javascript",
   "repository": "https://github.com/filipeas/blockchain-js",
   "author": "Filipe A.S <https://github.com/filipeas>",
+  "license": "MIT",
   "scripts": {
     "test": "jest --watchAll",
     "start": "node ./app",
